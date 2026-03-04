@@ -4,57 +4,82 @@
     <title>Cape Town Deals App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 40px;
-        }
-        .container {
-            background: white;
-            padding: 30px;
-            max-width: 500px;
-            margin: auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #222;
-        }
-        p {
-            color: #555;
-        }
-        ul {
-            text-align: left;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        input[type="email"] {
-            padding: 10px;
-            width: 80%;
-            margin-top: 20px;
-        }
-        button {
-            padding: 10px 20px;
-            margin-top: 15px;
-            background-color: #0077cc;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #005fa3;
-        }
+        
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 80px auto;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 40px;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    ul {
+        text-align: left;
+        display: inline-block;
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-top: 30px;
+        padding: 15px 30px;
+        font-size: 18px;
+        background: #ffcc00;
+        color: #222;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ffdb4d;
+        transform: scale(1.05);
+    }
+
+    .badge {
+        background: #ff4d4d;
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Find Every Retail Deal in Cape Town — In One App.</h1>
+    <div class="badge">Launching Soon in Cape Town!</div>
 
-    <p>No more jumping between Instagram pages or WhatsApp groups. Discover local store promotions instantly.</p>
+    <h1>Stop Missing Retail Deals.</h1>
 
+    <p>Discover every promotion happening near you — all in one simple app.</p>
     <ul>
         <li>✔ See deals near your location</li>
         <li>✔ Filter by category (fashion, electronics, groceries)</li>
