@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cape Town Deals App</title>
+    <title>Kuils River Deals App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <style>
@@ -10,34 +10,52 @@
         font-family: 'Segoe UI', sans-serif;
         background: linear-gradient(135deg, #1e3c72, #2a5298);
         color: white;
-        text-align: center;
         padding: 20px;
     }
 
-    .container {
-        max-width: 600px;
-        margin: 80px auto;
-        background: rgba(255, 255, 255, 0.1);
-        padding: 40px;
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1100px;
+        margin: 60px auto;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media (min-width: 900px) {
+        .content {
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            gap: 60px;
+        }
+    }
+
+    .text-section {
+        max-width: 500px;
     }
 
     h1 {
-        font-size: 32px;
-        margin-bottom: 15px;
+        font-size: 40px;
+        margin-bottom: 20px;
     }
 
     p {
         font-size: 18px;
         opacity: 0.9;
+        line-height: 1.6;
     }
 
     ul {
-        text-align: left;
-        display: inline-block;
         margin-top: 25px;
         font-size: 16px;
+        padding-left: 20px;
     }
 
     li {
@@ -68,47 +86,64 @@
         padding: 6px 12px;
         border-radius: 20px;
         font-size: 14px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 
     .mockup {
-        margin-top: 30px;
+        width: 300px;
         border-radius: 20px;
-        box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
-        width: 250px;
+        box-shadow: 0px 10px 25px rgba(0,0,0,0.4);
+        margin-top: 40px;
     }
 
-    .caption {
-        margin-top: 15px;
+    @media (min-width: 900px) {
+        .mockup {
+            margin-top: 0;
+        }
+    }
+
+    .small-text {
+        margin-top: 20px;
         font-size: 14px;
         opacity: 0.8;
     }
-    </style>   
+    </style>
 </head>
+
 <body>
 
-<div class="container">
-    <div class="badge">Launching Soon in Cape Town 🚀</div>
+<div class="wrapper">
+    <div class="badge">Launching Soon in Kuils River 🚀</div>
 
-    <h1>Kuils River’s Retail Deals All in One Place</h1>
+    <div class="content">
 
-    <p>Tired of scrolling through Instagram and WhatsApp to find promotions? We bring every local deal into one simple app.</p>
+        <div class="text-section">
+            <h1>Kuils River’s Retail Deals — All in One Place</h1>
 
-    <!-- Mockup Image -->
-    <img src="Blue Modern Money Management Mobile App Promotion Facebook Ad.png" alt="Cape Town Deals App Preview" class="mockup">
-    <p class="caption">Browse local deals.</p>
+            <p>
+                Tired of scrolling through Instagram and WhatsApp just to find store promotions?
+                We bring every local retail special into one simple app.
+            </p>
 
-    <ul>
-        <li>✔ See deals near your location</li>
-        <li>✔ Filter by category (fashion, electronics, groceries)</li>
-        <li>✔ Get alerts before promotions expire</li>
-    </ul>
+            <ul>
+                <li>✔ See deals near your location</li>
+                <li>✔ Filter by category (fashion, electronics, groceries)</li>
+                <li>✔ Get alerts before promotions expire</li>
+            </ul>
 
-    <p><strong>Join the waitlist — Be first to access.</strong></p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUyAvdIRtuPsMhAnzLggzpx-pn8ZiJqY1WIpIc6i-Qm6p5Dg/viewform" target="_blank">
+                <button>Get Early Access</button>
+            </a>
 
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeUyAvdIRtuPsMhAnzLggzpx-pn8ZiJqY1WIpIc6i-Qm6p5Dg/viewform" target="_blank">
-        <button>Notify Me</button>
-    </a>
+            <div class="small-text">
+                Built for Kuils River shoppers. Partnering with local stores.
+            </div>
+        </div>
+
+        <!-- IMPORTANT: Make sure your GitHub image file is named exactly app-mockup.png -->
+        <img src="app-mockup.png" alt="Kuils River Deals App Preview" class="mockup">
+
+    </div>
 </div>
 
 </body>
